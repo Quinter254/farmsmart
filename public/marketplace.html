@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Marketplace - Farm2Table</title>
+  <link rel="stylesheet" href="style.css">
+  <style>
+    body {
+      font-family: 'Poppins', sans-serif;
+      margin: 0;
+      padding: 0;
+      background: url("Tomatoes.jpg") no-repeat center center fixed;
+      background-size: cover;
+      color: #333;
+    }
+
+    header {
+      text-align: center;
+      padding: 20px;
+      background: rgba(255, 255, 255, 0.85);
+      backdrop-filter: blur(6px);
+      box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+    }
+    header h1 {
+      font-family: 'Pacifico', cursive;
+      color: #e63946;
+      font-size: 2.5rem;
+      margin: 0;
+    }
+
+    .market-container {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+      padding: 40px;
+    }
+
+    .card {
+      background: linear-gradient(135deg, #ffe6e6, #fff5f5);
+      border-radius: 20px;
+      padding: 20px;
+      text-align: center;
+      transition: transform 0.3s;
+      box-shadow: 0 6px 12px rgba(0,0,0,0.15);
+    }
+    .card:hover {
+      transform: translateY(-8px);
+    }
+    .card img {
+      width: 100%;
+      height: 180px;
+      object-fit: cover;
+      border-radius: 15px;
+      margin-bottom: 15px;
+    }
+    .card h3 {
+      margin: 10px 0;
+      color: #333;
+    }
+    .card p {
+      font-size: 0.95rem;
+      color: #444;
+    }
+    .price {
+      font-weight: bold;
+      color: #e63946;
+      margin-top: 8px;
+    }
+    .btn-buy {
+      display: inline-block;
+      margin-top: 10px;
+      padding: 10px 16px;
+      background: #e63946;
+      color: white;
+      border-radius: 8px;
+      text-decoration: none;
+      transition: background 0.3s;
+    }
+    .btn-buy:hover {
+      background: #b81f2d;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>🌱 Farm2Table Marketplace</h1>
+    <p>Fresh produce directly from local farmers</p>
+  </header>
+
+  <main class="market-container">
+    <!-- Tomato Card -->
+    <div class="card">
+      <img src="tomatoes.jpg" alt="Fresh Tomatoes">
+      <h3>🍅 Fresh Tomatoes</h3>
+      <p>Locally grown, juicy red tomatoes perfect for salads and stews.</p>
+      <p class="price">200 KES / Kg</p>
+      <a href="#" class="btn-buy">Buy Now</a>
+    </div>
+
+    <!-- Spinach Card -->
+    <div class="card">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/2/27/Spinach_leaves.jpg" alt="Spinach">
+      <h3>🥬 Organic Spinach</h3>
+      <p>Rich in iron and vitamins, freshly harvested every morning.</p>
+      <p class="price">100 KES / Bunch</p>
+      <a href="#" class="btn-buy">Buy Now</a>
+    </div>
+
+    <!-- Maize Card -->
+    <div class="card">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/6/65/Corncobs.jpg" alt="Maize">
+      <h3>🌽 Sweet Maize</h3>
+      <p>Sweet and tender maize directly from the farm, ready to roast or boil.</p>
+      <p class="price">50 KES / Cob</p>
+      <a href="#" class="btn-buy">Buy Now</a>
+    </div>
+
+    <!-- Eggs Card -->
+    <div class="card">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/1/15/Eggs_in_a_basket.jpg" alt="Farm Eggs">
+      <h3>🥚 Free-range Eggs</h3>
+      <p>Nutritious and fresh eggs from free-range chickens.</p>
+      <p class="price">350 KES / Tray</p>
+      <a href="#" class="btn-buy">Buy Now</a>
+    </div>
+  </main>
+</body>
+</html>

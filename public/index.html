@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Farmsmart</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+   <h1 class="site-title">🌱 Farmsmart</h1>
+    <nav>
+     <a href="marketplace.html" class="btn">Marketplace</a>
+      <a href="#login">Login</a>
+      <a href="#register">Register</a>
+    </nav>
+  </header>
+
+  <main>
+    <!-- Marketplace -->
+    <section id="cards" class="card-container">
+  <div class="card" onclick="this.classList.toggle('flipped')">
+    <div class="card-front">
+      <p>🍅 Fresh Tomatoes</p>
+    </div>
+    <div class="card-back">
+      <p>Farmer: Quinter Hope</p>
+      <p>Price: 200 KES</p>
+          <button onclick="payWithMpesa(200)">Pay with M-Pesa</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- Login -->
+    <section id="login">
+      <h2>Login</h2>
+      <form action="/login" method="POST">
+        <input type="email" name="email" placeholder="Email" required>
+        <input type="password" name="password" placeholder="Password" required>
+        <button type="submit">Login</button>
+      </form>
+    </section>
+
+    <!-- Register -->
+    <section id="register">
+      <h2>Register</h2>
+      <form action="/register" method="POST">
+        <input type="text" name="name" placeholder="Full Name" required>
+        <input type="email" name="email" placeholder="Email" required>
+        <input type="password" name="password" placeholder="Password" required>
+        <button type="submit">Register</button>
+      </form>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
+
